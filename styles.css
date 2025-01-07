@@ -1,0 +1,354 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: larger;
+  margin: 0;
+  display: flex;
+  flex-direction: column;    
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgba(69,113,247,1);
+  background: -moz-linear-gradient(top, rgba(69,113,247,1) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(69,113,247,1)), color-stop(100%, rgba(0,0,0,1)));
+  background: -webkit-linear-gradient(top, rgba(69,113,247,1) 0%, rgba(0,0,0,1) 100%);
+  background: -o-linear-gradient(top, rgba(69,113,247,1) 0%, rgba(0,0,0,1) 100%);
+  background: -ms-linear-gradient(top, rgba(69,113,247,1) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(69,113,247,1) 0%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4571f7', endColorstr='#000000', GradientType=0);
+}
+
+header.navbar-container {
+  width: 100%;
+  padding-block: 1rem;
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+background-color: rgba(0, 0, 0, 0.8);
+padding: 1rem 2rem;
+}
+
+header.navbar-container .title {
+font-size: 1.5rem;
+font-weight: 700;
+color: white;
+}
+
+header.navbar-container nav {
+display: flex;
+gap: 1rem;
+width: 100%;
+justify-content: flex-end;
+padding: 1rem 2rem;
+}
+
+header.navbar-container nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+header.navbar-container nav ul li {
+  margin: 0;
+}
+
+header.navbar-container nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header.navbar-container nav ul li a:hover {
+  background-color: #ffffff;
+  color: #0278ff;
+}
+
+.typewriter-container { /* Typewriter effect */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: relative;
+    width: max-content; 
+    margin: 0 auto;
+    margin-bottom: 7rem;
+}
+
+.hi {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: -2rem;
+  }
+
+  .typewriter-container h1 {
+    margin: 0;
+    border-right: 4px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: 
+        typing 3s steps(27) forwards, 
+        blink 1s step-end infinite;
+}
+
+.hi, .typewriter-container {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+@keyframes typing {
+    from { 
+        width: 0 
+    }
+    to { 
+        width: 22.7ch  /* Curson animation stop at n-character */
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-right-color: transparent 
+    }
+    50% { 
+        border-right-color: white 
+    }
+}
+
+article {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 10px; 
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+#About-me img { /*Foto makara UI*/
+    width: 600px;
+}
+
+#Skills img {
+    width: 4rem; /* Set the width of the images */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 0.5rem; /* Optional: Add some margin around the icons */
+  }
+  
+  #Skills img:hover {
+    transform: scale(1.2); 
+    transition: transform 0.3s ease; 
+  }
+
+.self-portrait {
+  display: flex;
+  justify-content: center;
+}
+
+.self-portrait img {
+  margin-top: 2.5rem;
+  height: 400px;
+  border-radius: 200px;
+  border: 18px double #91d0e4;
+}
+
+.self-portrait img:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+}
+
+aside {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 60px; /* Adjusted width to fit the icons */
+    z-index: 1000;
+    background-color: rgba(53, 64, 228, 0.171);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+aside .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+aside .social-media ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* Space between icons */
+}
+
+aside .social-media li {
+    list-style: none;
+}
+
+aside .social-media li a {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+aside .social-media li img {
+    width: 40px; /* Scaled down size for the images */
+    height: 40px; /* Ensures consistent aspect ratio */
+    border-radius: 50%; /* Optional: Makes the icons circular */
+    transition: transform 0.3s ease;
+}
+
+aside .social-media li img:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;;
+}
+
+#Contact form {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#Contact label {
+    color: white;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+#Contact input, 
+#Contact textarea {
+    padding: 0.8rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+#Contact input:focus, 
+#Contact textarea:focus {
+    outline: none;
+    border-color: #4571f7;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#Contact textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#Contact button {
+    padding: 0.8rem 2rem;
+    background-color: #4571f7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#Contact button:hover {
+    background-color: #3461e0;
+    transform: scale(1.05);
+}
+
+@keyframes appear{ /*Appearing animation when scrolling*/
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.block{ /* Block animation */
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8); 
+  text-align: center; 
+  padding: 1rem;
+  margin-top: auto; /* Footer ditaro sebagai footer/di bawah */
+  width: 100%;
+  max-height: 100px; 
+  display: flex; /* Flexbox layout */
+  justify-content: center; 
+  align-items: center;
+  padding-top: 1rem;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+    header.navbar-container {
+      width: 100%;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    header.navbar-container nav {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    header.navbar-container nav ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    header.navbar-container nav ul li a {
+      padding: 0.5rem 0;
+    }
+  
+    .typewriter-container {
+      font-size: 1.2rem;
+    }
+  
+    .self-portrait img {
+      height: 300px;
+    }
+  
+    aside {
+      display: none;
+    }
+  
+    footer {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+}

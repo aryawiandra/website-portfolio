@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
 <html>
- <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arya's Website Portfolio</title>
@@ -9,41 +10,40 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Link to Plus Jakarta Sans font -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome 5.15.4 -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
 
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
- </head>
-    <body>
-        <header class="navbar-container">
-            <div class="title">
-                <h1> Arya's Website Portfolio </h1>
-            </div>
-            <nav>
-                <ul>
-                    <li> <a href="#About-me">   <b>About Me</b>         </a></li>
-                    <li> <a href="#Projects">   <b>Projects</b>        </a></li>
-                    <li> <a href="#Skills">     <b>Skills</b>           </a></li>
-                    <li> <a href="#Contact">    <b>Contact</b>          </a></li>
-                </ul>
-            </nav>
-        </header>
 
-<main>
-    
+</head>
+
+<body>
+    <header class="navbar-container">
+        <div class="title">
+            <h1> Arya's Website Portfolio </h1>
+        </div>
+        <nav>
+            <ul>
+                <li> <a href="#About-me"> <b>About Me</b> </a></li>
+                <li> <a href="#Projects"> <b>Projects</b> </a></li>
+                <li> <a href="#Skills"> <b>Skills</b> </a></li>
+                <li> <a href="#Contact"> <b>Contact</b> </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
         <div class="self-portrait">
             <img src="img/foto-diri-circular.PNG" alt="Foto diri">
-        </div>  
+        </div>
 
         <div class="hi">
             <h1>Hi, I'm</h1>
@@ -52,74 +52,87 @@
             <h1>Muhammad Arya Wiandra Utomo</h1>
         </div>
 
-    <article class="content card block" id="About-me">
-        <h1>About Me</h1>
-        <p> I'm a student at Universitas Indonesia majoring in Computer Engineering with a high passion and interest in software development</p>
-        <img src="img/Makara_of_FT_UI.svg.png" alt="Logo Universitas Indonesia, Fakultas Teknik">
-    </article>
+        <article class="content card block" id="About-me">
+            <h1>About Me</h1>
+            <p> I'm a student at Universitas Indonesia majoring in Computer Engineering with a high passion and interest
+                in software development</p>
+            <img src="img/Makara_of_FT_UI.svg.png" alt="Logo Universitas Indonesia, Fakultas Teknik">
+        </article>
 
-    <article class="content card block" id="Projects">
-        <h1>Projects</h1>
-        <ul>
-            <li>Lorem (insert photo)</li>
-            <li>Ipsum (insert photo)</li>
-            <li>Dolor (insert photo)</li>
-        </ul>
-    </article>
-
-    <article class="content card block" id="Skills">
-        <h1>Skills</h1>
-        <i class=""></i>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python Icon" /> <!-- Python icon -->
-
-        
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java Icon" /> <!-- Java icon -->
-
-        
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C Icon"/> <!-- C icon -->
-
-        
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C# Icon"/> <!-- C# icon -->
-        
-        
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML Icon"/> <!-- HTML icon -->
-
-        
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS Icon" /> <!-- CSS icon -->
-
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL Icon"/> <!-- PostgreSQL icon -->
-    </article>
-
-    <article class="content card block" id="Contact">
-        <h1>Contact</h1>
-        <form action="mailto:aryautomo11@gmail.com?subject=Portfolio Contact Form&body=Message from portfolio" method="post" enctype="text/plain">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required placeholder="Enter your  name">
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder=" Enter your email">
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required placeholder="Your message here..."></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-    </article>
-    
-
-    <aside> <!-- Insert foto-foto logo social media-->
-        <div class="social-media">
+        <article class="content card block" id="Projects">
+            <h1>Projects</h1>
             <ul>
-                <li><a href="https://linkedin.com/in/aryawiandra/"><img alt="LinkedIn Logo" src="img/LinkedIn_icon.svg.png"/></a></li>
-                <li><a href="https://github.com/aryawiandra"><img alt="GitHub Logo" src="img/GitHub_Invertocat_Logo.svg.png"/></a></li>
-                <li><a href="https://instagram.com/aryawiandra"><img alt="Instgram Logo" src="img/Instagram_logo_2022.svg.webp"/></a></li>
+                <li>Lorem (insert photo)</li>
+                <li>Ipsum (insert photo)</li>
+                <li>Dolor (insert photo)</li>
             </ul>
-        </div>
-    </aside>
-</main>
-        <footer>
-                <p><b>2025 &copy; by Muhammad Arya Wiandra Utomo <br>
+        </article>
+
+        <article class="content card block" id="Skills">
+            <h1>Skills</h1>
+            <i class=""></i>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                alt="Python Icon" /> <!-- Python icon -->
+
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                alt="Java Icon" /> <!-- Java icon -->
+
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C Icon" />
+            <!-- C icon -->
+
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"
+                alt="C# Icon" /> <!-- C# icon -->
+
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                alt="HTML Icon" /> <!-- HTML icon -->
+
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                alt="CSS Icon" /> <!-- CSS icon -->
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                alt="PostgreSQL Icon" /> <!-- PostgreSQL icon -->
+        </article>
+
+        <article class="content card block" id="Contact">
+            <h1>Contact</h1>
+            <form action="mailto:aryautomo11@gmail.com?subject=Portfolio Contact Form&body=Message from portfolio"
+                method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your  name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder=" Enter your email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required placeholder="Your message here..."></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </article>
+
+
+        <aside> <!-- Insert foto-foto logo social media-->
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://linkedin.com/in/aryawiandra/"><img alt="LinkedIn Logo"
+                                src="img/LinkedIn_icon.svg.png" /></a></li>
+                    <li><a href="https://github.com/aryawiandra"><img alt="GitHub Logo"
+                                src="img/GitHub_Invertocat_Logo.svg.png" /></a></li>
+                    <li><a href="https://instagram.com/aryawiandra"><img alt="Instgram Logo"
+                                src="img/Instagram_logo_2022.svg.webp" /></a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <p><b>2025 &copy; by Muhammad Arya Wiandra Utomo <br>
                 All Rights Reserved</b></p>
-        </footer>
-    </body>
- </html>
+    </footer>
+</body>
+
+</html>
